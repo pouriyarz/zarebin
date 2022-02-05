@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+dependencies {
+
+    kapt "com.google.dagger:dagger-compiler:$libraries.dagger"
+    kapt "com.github.bumptech.glide:compiler:$libraries.glide"
+    implementation "com.google.dagger:dagger:$libraries.dagger"
+
+    implementation "androidx.constraintlayout:constraintlayout:$libraries.constraintLayout"
+    implementation "androidx.navigation:navigation-fragment-ktx:$libraries.navigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$libraries.navigation"
+
+    implementation "androidx.fragment:fragment-ktx:$libraries.fragment"
+    implementation "androidx.appcompat:appcompat:$libraries.appcompat"
+
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+
+    implementation "com.github.bumptech.glide:glide:$libraries.glide"
+
+    implementation "de.hdodenhof:circleimageview:$libraries.circleimageview"
+
+    implementation "com.github.Filmgardi:Pixelperfect:$libraries.pixelPerfect"
+
+    implementation project(":commons:design")
+    implementation project(":commons:base")
+
+    implementation project(":libraries:context")
+    implementation project(":libraries:image")
+    implementation project(":libraries:dependencyinjection")
+    implementation project(":libraries:recyclerview")
+    implementation project(":libraries:navigation")
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/commons/design/src/main/res/drawable/ic_add_static.xml" value="0.3435185185185185" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/choose_image_fragment.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/fragment_image_picker_bottom_sheet.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/gallery_activity.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/gallery_fragment.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/image_picker_bottom_sheet.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/libraries/src/main/res/layout/activity_main.xml" value="0.3651041666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+rootProject.name = "ImagePicker"
+include ':app'
+include ':libraries'
+include ':libraries:context'
+include ':libraries:dependencyinjection'
+include ':libraries:recyclerview'
+include ':libraries:image'
+include ':commons:design'
+include ':commons:base'
+include ':libraries:navigation'
+include ':feature'
+include ':feature:gallery'

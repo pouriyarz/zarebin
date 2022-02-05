@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\Arsh\\Desktop\\hamahang.jks')
+            keyAlias 'Hamahang'
+            keyPassword 'HamAhang@Dashboard+2021'
+            storePassword 'HamAhang@Dashboard+2021'
+        }
+    }
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "org.hamahang.hamahang"
+        minSdk 21
+        targetSdk 31
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            multiDexEnabled true
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+        debug {
+            multiDexEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt "com.google.dagger:dagger-compiler:$libraries.dagger"
+
+    implementation "com.google.dagger:dagger:$libraries.dagger"
+    implementation "androidx.core:core-ktx:$libraries.ktx"
+    implementation "androidx.appcompat:appcompat:$libraries.appcompat"
+    implementation "com.google.android.material:material:$libraries.material"
+    implementation "androidx.constraintlayout:constraintlayout:$libraries.constraintLayout"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$libraries.navigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$libraries.navigation"
+
+    implementation "androidx.fragment:fragment-ktx:$libraries.fragment"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$libraries.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$libraries.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$libraries.lifecycle"
+
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+
+    implementation project(":commons:base")
+
+    implementation project(":libraries:dependencyinjection")
+    implementation project(":libraries:context")
+    implementation project(":libraries:navigation")
+    implementation project(":feature:gallery")
+}

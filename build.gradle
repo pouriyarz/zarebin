@@ -1,0 +1,65 @@
+buildscript {
+    apply from: "$rootDir/buildscript/versionManager.gradle"
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$libraries.gradle"
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$libraries.detekt"
+   }
+}
+
+allprojects {
+    apply from: "$rootDir/buildscript/versionManager.gradle"
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            freeCompilerArgs += [
+                    "-Xopt-in=kotlin.RequiresOptIn"
+            ]
+        }
+    }
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.neshan.org/artifactory/public-maven" }
+    }
+}
+
+subprojects {
+    apply plugin: "io.gitlab.arturbosch.detekt"
+    detekt {
+        toolVersion = libraries.detekt
+        config = files("${rootDir}/detekt.yml")
+        parallel = true
+        reports {
+            xml.enabled = false
+            txt.enabled = false
+            html {
+                enabled = true
+                destination = file("${rootDir}/build/reports/detekt_${project.name}.html")
+            }
+        }
+    }
+    tasks.withType(io.gitlab.arturbosch.detekt.Detekt) {
+        exclude(".*/resources/.*")
+        exclude(".*/build/.*")
+    }
+    dependencies {
+        detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:$libraries.detekt"
+    }
+}
+
+apply from: "$rootDir/buildscript/librariesModule.gradle"
+ext {
+    defaultVersionName = application.versionName
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
