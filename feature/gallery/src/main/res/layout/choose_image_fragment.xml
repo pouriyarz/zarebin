@@ -49,11 +49,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <Button
+    <TextView
         android:id="@+id/choose"
         android:layout_width="@dimen/_wpp25_0"
         android:layout_height="@dimen/_wpp8_0"
-        android:background="@drawable/bg_round_orange"
+        android:background="@color/clr_yellow"
         android:gravity="center"
         android:text="@string/add_photo"
         android:layout_marginTop="@dimen/_wpp5_0"
