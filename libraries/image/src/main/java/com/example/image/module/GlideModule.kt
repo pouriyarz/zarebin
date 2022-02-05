@@ -16,8 +16,8 @@ object GlideModule {
     @LibrariesScope
     @Provides
     fun provideRequestOption(): RequestOptions {
-        return RequestOptions().placeholder(R.drawable.ic_profile)
-            .error(R.drawable.ic_profile)
+        return RequestOptions().placeholder(R.drawable.image_default)
+            .error(R.drawable.image_default)
     }
 
     @LibrariesScope

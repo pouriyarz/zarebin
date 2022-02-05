@@ -27,7 +27,7 @@
         </activity>
 
         <activity
-            android:name="com.example.gallery.util.TempActivity"
+            android:name="com.example.gallery.util.imagepicker.TempActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
