@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="chooseImageFragment" type="id" />
+    <item name="zarebinViewPagerFragment" type="id" />
     <item name="navigation_main" type="id" />
-    <item name="galleryActivity" type="id" />
-    <item name="imagePickerDialogFragment" type="id" />
+    <item name="mainActivity" type="id" />
+    <item name="googlePlayFragment" type="id" />
     <item name="action_chooseImageFragment_to_imagePickerDialogFragment" type="id" />
 </resources>

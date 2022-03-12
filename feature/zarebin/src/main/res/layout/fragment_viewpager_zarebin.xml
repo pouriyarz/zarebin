@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/close_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/calendars_recycler_view_layout"
+            android:layout_width="@dimen/_wpp50_0"
+            android:layout_height="@dimen/_wpp70_0"
+            android:layout_centerHorizontal="true"
+            android:elevation="@dimen/_wpp2_0"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="@dimen/_wpp2_0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/calendars_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

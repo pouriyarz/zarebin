@@ -5,11 +5,14 @@
       <module name="ImagePicker.app" target="11" />
       <module name="ImagePicker.commons.base" target="11" />
       <module name="ImagePicker.commons.design" target="11" />
-      <module name="ImagePicker.feature.gallery" target="11" />
+      <module name="ImagePicker.feature.zarebin" target="11" />
       <module name="ImagePicker.libraries.context" target="11" />
       <module name="ImagePicker.libraries.image" target="11" />
       <module name="ImagePicker.libraries.navigation" target="11" />
+      <module name="ImagePicker.libraries.networking" target="11" />
       <module name="ImagePicker.libraries.recyclerview" target="11" />
+      <module name="ImagePicker.libraries.sharepreferences" target="11" />
+      <module name="ImagePicker.libraries.viewmodel" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

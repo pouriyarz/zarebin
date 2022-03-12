@@ -8,4 +8,5 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$libraries.navigation"
     implementation "androidx.navigation:navigation-ui-ktx:$libraries.navigation"
     implementation project(":commons:design")
+    implementation project(":libraries:networking")
 }

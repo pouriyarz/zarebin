@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/app/src/main/res/layout/main_activity.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/commons/design/src/main/res/drawable/bg_round_orange.xml" value="0.33425925925925926" />
         <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/commons/design/src/main/res/drawable/ic_add_static.xml" value="0.3435185185185185" />
         <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/choose_image_fragment.xml" value="0.33" />
@@ -12,6 +13,14 @@
         <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/image_item.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/image_picker_bottom_sheet.xml" value="0.3651041666666667" />
         <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/gallery/src/main/res/layout/temp_activity.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/fragment_List.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/fragment_list.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/fragment_play_google.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/fragment_viewpager_zarebin.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/fragment_zarebin.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/horizontal_item.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/main_activity.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/feature/zarebin/src/main/res/layout/vertical_item.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Arsh/AndroidStudioProjects/ImagePicker/libraries/src/main/res/layout/activity_main.xml" value="0.3651041666666667" />
       </map>
     </option>

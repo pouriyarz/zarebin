@@ -2,22 +2,17 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/navigation_main"
-    app:startDestination="@id/chooseImageFragment">
-
+    app:startDestination="@id/zarebinViewPagerFragment">
     <fragment
-        android:id="@id/chooseImageFragment"
-        android:name="com.example.gallery.ui.fragments.ChooseImageFragment"
-        android:label="ChooseImageFragment" >
-        <action
-            android:id="@id/action_chooseImageFragment_to_imagePickerDialogFragment"
-            app:destination="@id/imagePickerDialogFragment" />
-    </fragment>
+        android:id="@id/zarebinViewPagerFragment"
+        android:name="com.example.zarebin.ui.fragment.ZarebinViewPagerFragment"
+        android:label="ZarebinViewPagerFragment" />
     <activity
-        android:id="@id/galleryActivity"
-        android:name="com.example.gallery.ui.GalleryActivity"
-        android:label="GalleryActivity" />
-    <dialog
-        android:id="@id/imagePickerDialogFragment"
-        android:name="com.example.gallery.ui.fragments.ImagePickerDialogFragment"
-        android:label="ImagePickerDialogFragment" />
+        android:id="@id/mainActivity"
+        android:name="com.example.zarebin.ui.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@id/googlePlayFragment"
+        android:name="com.example.zarebin.ui.fragment.GooglePlayFragment"
+        android:label="GooglePlayFragment" />
 </navigation>

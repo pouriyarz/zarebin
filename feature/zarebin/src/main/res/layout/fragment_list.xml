@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_wpp5_0"
+    android:paddingRight="@dimen/_wpp5_0"
+    android:paddingTop="@dimen/_wpp5_0">
+
+    <TextView
+        android:id="@+id/horizontal_recycler_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_wpp2_0"
+        android:fontFamily="@font/iransansmobile"
+        android:text="Horizontal RecycleView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_wpp4_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_wpp2_0"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_recycler_view_text" />
+
+    <TextView
+        android:id="@+id/vertical_recycler_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_wpp5_0"
+        android:fontFamily="@font/iransansmobile"
+        android:text="Vertical RecycleView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_wpp4_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_recycler_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vertical_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_wpp2_0"
+        app:layout_constraintTop_toBottomOf="@id/vertical_recycler_view_text" />
+
+</LinearLayout>

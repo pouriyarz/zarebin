@@ -16,12 +16,17 @@
             <option value="$PROJECT_DIR$/commons/design" />
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/feature/gallery" />
+            <option value="$PROJECT_DIR$/feature/sample" />
+            <option value="$PROJECT_DIR$/feature/zarebin" />
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/context" />
             <option value="$PROJECT_DIR$/libraries/dependencyinjection" />
             <option value="$PROJECT_DIR$/libraries/image" />
             <option value="$PROJECT_DIR$/libraries/navigation" />
+            <option value="$PROJECT_DIR$/libraries/networking" />
             <option value="$PROJECT_DIR$/libraries/recyclerview" />
+            <option value="$PROJECT_DIR$/libraries/sharepreferences" />
+            <option value="$PROJECT_DIR$/libraries/viewmodel" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

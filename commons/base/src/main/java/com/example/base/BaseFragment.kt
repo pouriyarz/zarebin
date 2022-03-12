@@ -34,4 +34,5 @@ abstract class BaseFragment<FragmentViewBinding : ViewBinding>(@LayoutRes privat
     abstract fun inject()
     abstract fun release()
     abstract fun listenToView()
+    abstract fun listenToViewModel()
 }

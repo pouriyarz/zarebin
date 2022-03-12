@@ -1,0 +1,20 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+dependencies {
+    kapt "com.google.dagger:dagger-compiler:$libraries.dagger"
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation "com.google.dagger:dagger:$libraries.dagger"
+    implementation "com.squareup.retrofit2:retrofit:$libraries.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$libraries.retrofit"
+    implementation "com.squareup.okhttp3:logging-interceptor:$libraries.okHttp"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$libraries.coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$libraries.coroutines"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$libraries.kotlin"
+    implementation project(":libraries:dependencyinjection")
+    implementation project(":libraries:context")
+    implementation project(":libraries:sharepreferences")
+}

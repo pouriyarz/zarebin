@@ -1,0 +1,12 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+dependencies {
+    implementation "com.google.dagger:dagger:$libraries.dagger"
+
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$libraries.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$libraries.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$libraries.lifecycle"
+}
